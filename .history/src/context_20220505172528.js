@@ -15,7 +15,6 @@ const AppProvider = ({ children }) => {
       const response = await fetch(`${url}${searchTerm}`);
       const data = await response.json();
       const { drinks } = data;
-
       if (drinks) {
         const newCocktails = drinks.map((item) => {
           const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
@@ -32,8 +31,8 @@ const AppProvider = ({ children }) => {
       } else {
         setCocktails([]);
       }
-      setLoading(false);
     } catch (error) {
+      setLoading(false);
       console.log(error);
     }
   };
