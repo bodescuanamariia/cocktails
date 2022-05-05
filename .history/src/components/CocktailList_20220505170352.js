@@ -4,7 +4,7 @@ import Loading from "./Loading";
 import { useGlobalContext } from "../context";
 
 const CocktailList = () => {
-  const { cocktails, loading } = useGlobalContext();
+  const { Cocktails, loading } = useGlobalContext();
 
   if (loading) {
     return <Loading />;
