@@ -13,9 +13,7 @@ const SearchForm = () => {
     setSearchTerm(searchValue.current.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  const handleSubmit = (e) => {};
   return (
     <section className="section">
       <form className="search-form" onSubmit={handleSubmit}>
